@@ -1,0 +1,175 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #00ff00;
+    padding-bottom: 20px;
+    
+}
+
+.header button {
+    background: transparent;
+    height: 40px;
+    width: 200px;
+    font-size: larger;
+    color: white;
+    padding: 0px;
+ 
+
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #f5f5f5;
+    line-height: 1.6;
+    background: url('pexeLs-markusspiske-1089438.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+.abc {
+    background: rgba(0, 0, 0, 0.8); 
+    color: #f5f5f5;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.def h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+    color: #f5f5f5;
+}
+
+.def p {
+    font-size: 1.2rem;
+    animation: fadeInUp 1s ease-in-out;
+    color: #f5f5f5;
+}
+
+.xyz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.ash {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    background: #000000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #f5f5f5; 
+}
+
+.ash:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 229, 153, 0.5);
+}
+
+.ash img {
+    width: 300px;
+    border-radius: 10px;
+    animation: slideInLeft 1s ease-in-out;
+    border: 2px solid #f5f5f5;
+}
+
+.ash reverse img {
+    order: 2;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.Ls {
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.Ls h2 {
+    margin-bottom: 10px;
+    color: #f5f5f5;
+}
+
+.Ls p {
+    font-size: 1rem;
+    color: #f5f5f5; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .ash {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ash img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .Ls {
+        text-align: center;
+    }
+}
+
+.video {
+    float:left;
+}
