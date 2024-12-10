@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Grow-Studio</div>
+            <ul class="nav-links">
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../About/about.html">About</a></li>
+                <li><a href="../Case Studies/CaseStudies.html">Case Studies</a></li>
+                <li><a href="../price/prices.html">Pricing</a></li>
+                <li><a href="../Request Quotes/RequestQuotes.html">Request Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <div class="tabs">
+                <button class="tab active" onclick="window.location.href='#login-form'">Login</button>
+                <button class="tab" onclick="window.location.href='#signup-form'">Sign Up</button>
+            </div>
 
+            <form id="login-form" class="form" action="#" method="POST">
+                <h2>Welcome Back</h2>
+                <div class="form-group">
+                    <input type="email" name="email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" required placeholder="Password">
+                </div>
+                <div class="form-group remember-forgot">
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <form id="signup-form" class="form" action="#" method="POST">
+                <h2>Create Account</h2>
+                <div class="form-group">
+                    <input type="text" name="fullname" required placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" required placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="confirm-password" required placeholder="Confirm Password">
+                </div>
+                <div class="form-group terms">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the Terms & Conditions
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
