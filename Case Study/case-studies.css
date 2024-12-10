@@ -1,0 +1,350 @@
+body {
+    background-color: #0C0B11;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+  
+  }
+  
+  a {
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 250;
+    font-style: normal;
+  }
+  
+  header nav { 
+    height: 32px;
+    width: 100vw;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 14px auto;
+  }
+  
+  header nav .menu {
+    display: flex;
+  }
+  
+  header nav .menu .icon {
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+  
+  header nav .menu .links {
+    display: flex;
+    margin: 0 12px;
+  }
+  
+  header nav .menu .links .link
+  {
+    padding:0 5px ;
+  }
+  
+  header nav .menu .links .link a
+  {
+    color : rgba(255, 255, 255, 0.9);
+  
+  }
+  
+  a{
+    text-decoration: none;
+    font-size: .875rem;
+    color: #fff;
+  
+  }
+  
+  header nav .login  {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  header nav .login .signup {
+    background-color: rgb(0 229 153);
+    padding: 8px;
+    border-radius: 25px;
+    width: 100px;
+    margin: 0 12px;
+    text-align: center;
+  }
+  
+  header nav .login .signup a {
+    color: #0C0B11;
+    font-weight: 500;
+  }
+  
+  header nav .login .quote-btn {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    padding: 8px 16px;
+    border-radius: 25px;
+    margin: 0 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  header nav .login .quote-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.3);
+  }
+  
+  header nav .login .quote-btn a {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  
+.case-studies-hero {
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+.case-studies-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: rgb(0 229 153);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.case-studies-hero p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 20px;
+}
+
+.case-study-card {
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    cursor: pointer;
+    height: 400px;
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.case-study-card:hover {
+    height: auto;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 255, 0, 0.2);
+}
+
+.case-study-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.case-study-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.case-study-card:hover .case-study-image img {
+    transform: scale(1.1);
+}
+
+.case-study-content {
+    padding: 1.5rem;
+}
+
+.case-study-info h3 {
+    color: rgb(0 229 153);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.case-study-brief {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.case-study-details {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.case-study-card:hover .case-study-details {
+    opacity: 1;
+    max-height: 1000px;
+    margin-top: 1rem;
+}
+
+.case-study-details h4 {
+    color: rgb(0 229 153);
+    margin: 1rem 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.case-study-details p {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.case-study-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0, 255, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(0 229 153);
+    margin-bottom: 0.3rem;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.case-study-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.case-study-tags span {
+    background: rgba(0, 255, 0, 0.1);
+    color: rgb(0 229 153);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1200px) {
+    .case-studies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .case-study-card {
+        height: 350px;
+    }
+}
+
+.testimonials-section {
+    padding: 60px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.testimonials-section h2 {
+    color: rgb(0 229 153);
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.testimonials-slider {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+    animation: scroll 60s linear infinite;
+    width: fit-content;
+}
+
+.testimonials-slider:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-330px * 12)); 
+    }
+}
+
+.testimonial {
+    background: #111111;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 0, 0.2);
+    position: relative;
+    min-width: 300px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+}
+
+.testimonial i {
+    color: rgb(0 229 153);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    color: #ffffff;
+    font-style: italic;
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.testimonial-author {
+    margin-top: 20px;
+}
+
+.testimonial-author strong {
+    display: block;
+    color: rgb(0 229 153);
+    margin-bottom: 5px;
+}
+
+.testimonial-author span {
+    color: #888;
+    font-size: 0.9em;
+}
